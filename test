@@ -1,0 +1,16 @@
+
+
+SCRAPED DATA
+#https://api.demandbase.com/api/v2/ip.json?key=886df890abacd0c14b2a180ff341c8743d894c46&query={IPaddress}
+#https://www.virustotal.com/ui/files/f8ee4c00a3a53206d8d37abe5ed9f4bfc210a188cd5b819d3e1f77b34504061e
+#https://api.bcti.brightcloud.com/1.0/url/{getinfo?url={domain}}&oemid=Cujo&deviceid=NextGen_FW_1&uid=null
+#https://urlscan.io/api/v1/search/?q=domain:{domain}
+#https://urlscan.io/api/v1/result/{uuid}/
+#https://www.hybrid-analysis.com/feed?json
+#https://otx.alienvault.com/otxapi/indicators/file/analysis/{SHA256}
+#https://otx.alienvault.com/otxapi/indicators/ip/analysis/{IP}
+#https://otx.alienvault.com/otxapi/indicators/domain/analysis/{domain}
+
+SRC DOCS
+#https://github.com/dnif-archive/lookup-webroot/blob/master/webroot.py
+#https://github.com/dnif-archive/trigger-slack/blob/master/slack.py
