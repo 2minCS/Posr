@@ -27,6 +27,12 @@ https://user-images.githubusercontent.com/117036131/199084309-a99c1611-5a9e-466f
 
 ## Current Features 
 
+### v0.3.5
+
+* Find way to suppress emoji's [🥺]
+* Table status/time to complete
+* Add "config" command to allow for changing of "conf.ini" file
+
 ### v0.3.0
 
 * Export tables to Text, HTML, or SVG
