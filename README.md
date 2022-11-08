@@ -1,6 +1,6 @@
-# Posr>
+# Posr> on Replit
 Posr> provides a minimalist method for conducting Domain, IP, and File hashes OSR on major malware analysis sites. 
-
+I enjoy testing features for Posr> on Replit. Feel free to check out my [page!](https://replit.com/@2minCS/Posrgreater?v=1)  
 
 ## Demo
 
