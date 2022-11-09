@@ -8,30 +8,47 @@ Posr> provides a minimalist method for conducting Domain, IP, and File hashes OS
 https://user-images.githubusercontent.com/117036131/199084309-a99c1611-5a9e-466f-a744-df58932578ac.mp4
 
 
-## Options
+## Commands
 
-- -mh : Takes a multi-hash file (SHA256)
-- -sh : Takes a single hash (SHA256)
+- `osr` 
+Allows for the processing of hashes, domains, and IPs. Can build and /or export a table from the processed results.
 
-- -md : Takes a multi-domain file
-- -sd : Takes a single domain
+#### Options
+    -mh : Takes a multi-hash file (SHA256)
+    -sh : Takes a single hash (SHA256)
+    
+    -md : Takes a multi-domain file
+    -sd : Takes a single domain
+    
+    -mi : Takes a muti-IP file
+    -si : Takes a single IP
+      
+    -xp : Exports the table into a .txt, .html, or .svg file. (Example: -xp myfile.txt)
+      
+    --noprint : Prevents table from displaying on the console when exporting a file
+    --print : Displays the table when exporting a file
 
-- -mi : Takes a muti-IP file
-- -si : Takes a single IP
 
-- -xp : Exports the table into a .txt, .html, or .svg file. (Example: -xp myfile.txt)
+- `cls`
+Clears console and resets cursor to the top.
+#### Options
+    - None
+    
+- `config`
+Allows changes to the conf.ini
 
-- --noprint : Prevents table from displaying on the console when exporting a file
-- --print : Displays the table when exporting a file
-
+#### Options
+    --noemojis : Disables emojis. Changes the conf.ini file.
+    --emojis : Enables emojis. Changes the conf.ini file. Default is enabled.
 
 ## Current Features 
 
 ### v0.3.5
 
-* Find way to suppress emoji's [🥺]
-* Table status/time to complete
-* Add "config" command to allow for changing of "conf.ini" file
+* Added functionality to suppress emoji's [🥺]
+* Added table generation status/time taken to complete 
+* Added "config" command to allow for changing of "conf.ini" file 
+* Added Hybrid Analysis to query.
 
 ### v0.3.0
 

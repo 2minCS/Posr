@@ -63,6 +63,7 @@ def posr():
 @click.option('--print', 'noprint', flag_value=False, default=False)
 
 def osr(files, domain, ip, file, domains, ips, export, noprint):
+    '''Allows for the processing of hashes, domains, and IPs. Can build and /or export a table from the processed results.'''
     start = perf_counter()
     if files:
       with console.status("Running hashes through tools...") as status:
@@ -118,7 +119,7 @@ def cls():
 @click.option('--noemoji', 'noemoji', flag_value='off')
 @click.option('--emoji', 'noemoji', flag_value='on', default='on')
 def config(noemoji):
-  '''Sets up the conf.ini file.'''
+  '''Allows changes to the conf.ini.'''
 #Read conf.ini file
   config = ConfigParser()
   config.read("./config/conf.ini")
