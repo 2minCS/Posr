@@ -7,7 +7,6 @@
 - [ ] Graceful error handling
 - [ ] Add proper file parsing
 - [-] Add concurrency to improve speed [Need to run more tests]
-- [ ] Add more configurations to "conf.ini"
 
 ### In Progress
 
@@ -23,3 +22,4 @@
 - [x] Added table generation status/time taken to complete [v0.3.5]
 - [x] Added "config" command to allow for changing of "conf.ini" file [v0.3.5]
 - [x] Added Hybrid Analysis to query. [v0.3.5]
+- [x] Added more API configurations to "conf.ini" [v0.3.6]

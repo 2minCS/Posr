@@ -1,9 +1,8 @@
 import json
 import requests
-import os
 import pathlib
 import concurrent.futures
-
+from config.config import api_conf
 
 
 #-------------------------------------------------------------------------------------------------
@@ -107,9 +106,8 @@ def otx_ip(input):
 
 
 #
-deviceid = os.environ['deviceid']
-oemid = os.environ['oemid']
 
+oemid, deviceid = bcapi_conf()
 #-------------------------------------------------------------------------------------------------
 def bc_file(input):
   url = f"https://api.bcti.brightcloud.com/1.0/file/getinfo?file={input}&oemid={oemid}&deviceid={deviceid}&uid=null"
@@ -293,7 +291,7 @@ def vt_ip(input):
         pass
 
 
-ha_api = os.environ['HA_API']
+ha_api = hapi_conf()
 
 #-------------------------------------------------------------------------------------------------
 def ha_file(input):

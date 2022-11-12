@@ -1,6 +1,6 @@
 from configparser import ConfigParser
 import random 
-
+import os
 
 high = [
     '😷', '🤒', '🤕', '🤢', '🤮', '🤧', '🥵', '🥶', '🥴', '😵', '🤯', '😤', '😠', '🤬', '😈',
@@ -19,6 +19,26 @@ ha = '🤖'
 config = ConfigParser()
 conf_fp = './config/conf.ini'
 
+def hapi_conf():
+  config.read(conf_fp)
+  with open(conf_fp,'r') as f:
+    if config['DEFAULT']['HA_API']:
+      h_Api = config['DEFAULT']['HA_API']
+    else 
+      h_Api = os.environ['HA_API']
+    return ha_Api
+    
+def bcapi_conf():
+  config.read(conf_fp)
+  with open(conf_fp,'r') as f:
+    if config['DEFAULT']['BC_OEMID'] and config['DEFAULT']['BC_DEVICE']:
+      bc_oemid = config['DEFAULT']['BC_OEMID']
+      bc_device = config['DEFAULT']['BC_DEVICE']
+    else 
+      bc_oemid = os.environ['oemid']
+      bc_device = os.environ['deviceid']
+    return bc_oemid, bc_device
+    
 def emoji_select(x):
   config.read(conf_fp)
   with open(conf_fp, 'r') as f:

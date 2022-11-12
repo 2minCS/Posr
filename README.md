@@ -10,10 +10,10 @@ https://user-images.githubusercontent.com/117036131/199084309-a99c1611-5a9e-466f
 
 ## Commands
 
-- `osr` 
+##  `osr` 
 Allows for the processing of hashes, domains, and IPs. Can build and /or export a table from the processed results.
 
-#### Options
+###### Options
     -mh : Takes a multi-hash file (SHA256)
     -sh : Takes a single hash (SHA256)
     
@@ -29,19 +29,26 @@ Allows for the processing of hashes, domains, and IPs. Can build and /or export 
     --print : Displays the table when exporting a file
 
 
-- `cls`
+##  `cls`
 Clears console and resets cursor to the top.
-#### Options
+###### Options
     - None
     
-- `config`
+## `config`
 Allows changes to the conf.ini
 
-#### Options
+###### Options
     --noemojis : Disables emojis. Changes the conf.ini file.
     --emojis : Enables emojis. Changes the conf.ini file. Default is enabled.
 
+## conf.ini
+Posr> will check the conf.ini file first for your Hybrid Analysis and BrightCloud  keys. \
+Otherwise, please place these in their respective environment variables `HA_API`,`oemid`,`deviceid`
+
 ## Current Features 
+
+### v0.3.6
+* Added more API configurations to "conf.ini" 
 
 ### v0.3.5
 
